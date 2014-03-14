@@ -1,1 +1,132 @@
-Hello World2
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>gsoc - codecombat by rsrikanth080</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>gsoc - codecombat</h1>
+        <p>game on!!</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/rsrikanth080" class="button fork"><strong>View On GitHub</strong></a>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p><strong># Build Great Classic Algorithm Demos</strong></p>
+
+<p>The plan is to make  some levels of the Game which depict and help the user in understanding Classic Algorithms.
+The algorithms on which I’d like to work would be Merge Sort and Dijkstra’s Algorithm. These are two of must-know Classic Algorithms for a programmer</p>
+
+<p><strong>Idea :</strong>
+There would be 6 different levels for making the user understand and be able to write a program for sorting elements of an array using Merge Sort; and 2(*) extra levels dedicated for Dijkstra’s Algorithm for shortest path. In the first 5 levels of the Game, the user has to write the code for basic entities used in various sorting algorithms. The Basic levels are:</p>
+
+<ol>
+<li>Swap the Warriors</li>
+<li>Insert A New Warrior</li>
+<li>Horse Ride(Selection Sort)</li>
+<li>Insertion Sort</li>
+<li>Merge Sorting two Sorted Arrays</li>
+<li>Merge Sort a single Unsorted ray
+// Dijkstra’s Algorithm Brief</li>
+</ol><p><strong>## Detailed Description</strong></p>
+
+<p><strong><em>StoryLine(Journey Part - 1) :</em></strong>
+A Group of Warriors , were set on an adventure to win back their homeland from the Blandon (the fire eyed Cyclopes). On their adventure to find him , they face lot of challenges(through which we make the user play and understand the classic algorithms).
+These challenges are over come by the warriors with the help of their wizard.
+The Levels mentioned above are explained in this section.</p>
+
+<p><strong>### LEVEL 1 ( First Challenge will be with water)</strong>
+<em>Swap The Warriors</em></p>
+
+<p>Three Warriors are standing on two stones, floating on water, and have to exchange their position,i.e, swap their positions. A third stone is in between the stones and a stone cannot bear the weight of two soldiers. The Wizard can transport one at time from one stone to other which will follow to user’s commands only. A hint will be given in case the user desires so. An order button below the console is provided on-clicking which the user sees the warriors moving. And hence the user is made to code.</p>
+
+<p>In the console interpreter we give him the code as follow :
+<code>// a - stone on which warrior 1 is standing</code>
+<code>// b - stone on which warrior 2 is standing</code>
+<code>// c - empty floating stone</code>
+<code>// write c = a;</code>
+<code>// here goes the users command.</code> </p>
+
+<p>(we save this as swap function,which we will make the user to use in next levels )</p>
+
+<p><strong>### LEVEL 2 (Set to board on Sea)</strong>
+<em>Insert A New Warrior</em></p>
+
+<p>(<em><strong>StoryLine :</strong></em>The King wants set a commander for each of his four ships, three commanders were on there floating stones to carry them to the ships according to their skillset , now comes the fourth commander whose skillset lies between the other three commanders. Now the challenge is to insert this commander in the queue)</p>
+
+<p>They are standing on floating stones and are ready to board the ship. One extra floating stone is left vacant. The user has to make the New commander stand on the stone where he belongs and a small ferry is used for this purpose. The user is made to write an if statement to check if the i th element of the array,i.e, the i th commander’s skill set is smaller than his skill set or not. And if yes, then his position, the place where the commander should be inserted is marked, and a for loop is then introduced to check the above condition for all the elements. And then space is made by calling the transfer function which will be pre-defined and the Warrior inserted. All this is done using the user’s code.</p>
+
+<h3>
+<a name="level-3" class="anchor" href="#level-3"><span class="octicon octicon-link"></span></a><strong>LEVEL 3</strong>
+</h3>
+
+<p><em>Train Ride(Selection Sort)</em></p>
+
+<p>The Next Part of the Journey has a train ride. But the problem with it is their size. The bogies are of different sizes and hence there travelling in accordance with their war skills have now become useless. The King now wishes to sort them in accordance with their sizes and hence make them enter their respective bogies as each bogie can accommodate only a single warrior. Now the King’s wizard creates a magic cloud which can change its size and an arrow head pointing at the first bogie initially and he takes the help of user’s swap function and uses it as a spell. He needs the user’s help in making the cloud find the lowest element amongst the Warriors, every time the cloud finds a Warrior smaller than it’s size it takes its shape and in the end, after checking all the elements, the user casts the "swap" spell. And swap that small Warrior with the Warrior at arrowhead position. And then the arrow head is moved and the above steps are repeated using a loop. And hence, they are sorted using Selection Sort Method</p>
+
+<h3>
+<a name="level-4" class="anchor" href="#level-4"><span class="octicon octicon-link"></span></a><strong>LEVEL 4</strong>
+</h3>
+
+<p><em>Insertion Sort (Horse Ride)</em></p>
+
+<p>It’s getting late and the king has realised that if they go with this speed then they won’t be able to reach the safe zone before the sun sets. They have crossed the water body and have to ride horses in the next part of their journey. The horses are of different sizes and the Warriors of different heights. The King realises that he cannot help it now as the heights are not the same as their heights horses and hence asks the wizard ,i.e. the user to help him in making the Warriors ride on the horses provided. More importantly, this time he needs a faster method, than the one which was previously adopted. This is done using insertion sort, a sorting technique for an unsorted array. The user creates an imaginary partition and considers a part to be sorted,King first sends the first Warrior to the first horse and moves the second Warrior and position them according to their weights and then inserts the i th Warrior using the insertion technique or insertion spell and thus arranges them.here we use the insertion spell which we made in the second level.</p>
+
+<h3>
+<a name="level-5" class="anchor" href="#level-5"><span class="octicon octicon-link"></span></a><strong>LEVEL 5</strong>
+</h3>
+
+<p><em>Merge Sorting two Sorted Arrays</em></p>
+
+<p>(<strong><em>StoryLine:</em></strong> In their journey few of the warriors fell sick , so they stop by a friendly country were they seek for help.The King of that country help them and agree to help our king by giving his warriors to our army.Now our next task is to sort warriors according to skillset from among both the army.)</p>
+
+<p>This is the section where the user first plays the game and then understands it and writes the code himself/herself. The game contains a skill wise sorted army of two kingdoms, RED(our army) and BLUE(basically these are arrays). There' s a battle strip in between them and the two army's warriors(one from  each) reaches the strip then fights.The user has to compare the warriors skillset and the winner is made to sit on seat of honor(this is done by the user by adding that array element to final sorted array.). the looser warrior will fight with the next warrior of the other army. On completion of the above task, the user finds that the new army (Golden Army) this formed has members sorted ascendingly in order of their skill set and now they start moving towards the enemy's kingdom.</p>
+
+<h3>
+<a name="level-6" class="anchor" href="#level-6"><span class="octicon octicon-link"></span></a><strong>LEVEL 6</strong>
+</h3>
+
+<p><em>Merge Sort in a single Unsorted ray</em></p>
+
+<p>(**<em>StoryLine:</em> **Next Challenge is for the golden army to travel to the final destination through a tunnel.The friendly king has old connected carriage, whose compartment are to be set in ascending order for maximum speed)</p>
+
+<p>There is a swapping disc(which is operated with the swap spell from level 1) and track set to solve our challenge. Here is the rule that we always select the half the number of elements till and consider the left part and do the same till we get to the swap disc, where carriages are compared and swapped if necessary.After swap the carriages return back to their modified track positions(wizard will be guiding for the first two levels of merging).Once the finals half’s are sorted . the carriage is set to go!!!</p>
+
+<p>With this i would end the first part of the journey teaching the user all the basic sorting algorithms.</p>
+
+<h2>
+<a name="dijkstras-algorithm---algo-to-find-the-shortest-pathjourney-part---2-" class="anchor" href="#dijkstras-algorithm---algo-to-find-the-shortest-pathjourney-part---2-"><span class="octicon octicon-link"></span></a><strong>Dijkstra’s Algorithm - Algo to find the shortest path(Journey part - 2) :</strong>
+</h2>
+
+<p><em><strong>StoryLine :</strong></em> The army reaches the enemy kingdom by dawn, there are number of paths with respective number of junctions to reach the gate of his kingdom , but army has to reach before sunrise. so with the help of the wizard the king and his army finds the shortest path.</p>
+
+<p>All the warriors carry a bow and arrow which they tied a rope to know the distance it reached.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
