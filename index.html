@@ -129,7 +129,16 @@ The Levels mentioned above are explained in this section.</p>
 
 <p><em><strong>StoryLine :</strong></em> The army reaches the enemy kingdom by dawn, there are number of paths with respective number of junctions to reach the gate of his kingdom , but army has to reach before sunrise. so with the help of the wizard the king and his army finds the shortest path.</p>
 
-<p>All the warriors carry a bow and arrow which they tied a rope to know the distance it reached.</p>
+<p>All the warriors carry a bow and arrow which they tied a rope to know the distance it reached.
+arena - Tower which have different paths to reach with number of nodes/junctions where we keep so called street lamps.
+note : in this algorithm we first consider all the nodes to be at infinity.<br />
+this.Throw(pos) - this will throw the anchor to the specifed position </p>
+<p>Distance of that will show up on that street lamp (if the throw distance is less than the distance which is present on that lamp then throw will be failed)
+we send a warrior to that node , who will wait for the kings order to move to the next junction
+similarly we/king ask to fire to all the initial nodes by which we get the distance from intial point to all the first nodes.
+next king will ask the a warrior to fire to the next node,as he fires distance of the next node will be know.
+Here warrior standing at node will be considered as the visited node and the path throught which the warriors travelled will be highlighted
+once a warrior reach the tower we shall hightlight the shortest path.</p>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
